@@ -5,6 +5,10 @@ module "vpc" {
   version = "2.21.0"
   name = "Sudhi"
   cidr = "10.20.0.0/16"
+  tags = {
+    Department = "DevOps"
+    Billable = "True"
+  }
   database_subnet_assign_ipv6_address_on_creation = "false"
   elasticache_subnet_assign_ipv6_address_on_creation = "false"
   enable_classiclink = "false"
